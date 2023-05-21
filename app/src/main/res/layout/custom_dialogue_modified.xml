@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_agence"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:hint="Agence name"
+
+            app:helperTextTextColor="@android:color/darker_gray"
+            app:endIconMode="dropdown_menu"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
+            app:hintTextColor="@color/yellow"
+            app:startIconTint="@color/vector_color"
+            app:boxStrokeColor="@color/yellow"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdown_text_agence"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_from"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:hint="Depart"
+
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:hintTextColor="@color/yellow"
+            app:startIconTint="@color/vector_color"
+            app:boxStrokeColor="@color/yellow"
+            app:startIconDrawable="@drawable/ic_baseline_near_me_24"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdown_text_from"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_to"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:hint="Arrive"
+
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:startIconDrawable="@drawable/ic_baseline_location_on_24"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/yellow"
+            app:startIconTint="@color/vector_color"
+            app:boxStrokeColor="@color/yellow">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdown_text_to"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/date_tv"
+                style="@style/Widget.AppCompat.TextView"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:height="50dp"
+                android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+                app:drawableTint="@color/tv_color"
+                android:textColor="@color/tv_color"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/state_date_picker"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Departure">
+
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/time_tv"
+                android:layout_width="150dp"
+                android:height="50dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginStart="3dp"
+                android:drawableStart="@drawable/ic_baseline_access_time_filled_24"
+                android:background="@drawable/state_time_picker"
+                android:text="Leave time"
+                android:layout_height="wrap_content"
+                app:drawableTint="@color/tv_color"
+                android:textColor="@color/tv_color">
+
+
+            </com.google.android.material.textview.MaterialTextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+
+
+            <com.google.android.material.button.MaterialButton
+                app:cornerRadius="12dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:theme="@style/btn_style"
+                android:id="@+id/btn_cancel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel" />
+            <com.google.android.material.button.MaterialButton
+                android:textAllCaps="false"
+                app:cornerRadius="12dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/white"
+                android:id="@+id/btn_delete"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Delete" />
+
+            <com.google.android.material.button.MaterialButton
+                app:cornerRadius="12dp"
+                android:textColor="@color/white"
+                android:id="@+id/btn_save"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="Save" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:elevation="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="107dp"
+    android:elevation="20dp"
+    app:cardElevation="10dp"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginStart="31dp"
+    android:layout_marginEnd="31dp"
+    app:cardCornerRadius="15dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="107dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_agence"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/img_agence"
+            android:layout_toEndOf="@id/img_agence"
+            android:text="Text View"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+
+
+            android:
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

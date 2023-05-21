@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "479280372430",
+    "firebase_url": "https://ardino-administration2-default-rtdb.firebaseio.com",
+    "project_id": "ardino-administration2",
+    "storage_bucket": "ardino-administration2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479280372430:android:2cf8aee56ebb6d3e3c8e9f",
+        "android_client_info": {
+          "package_name": "com.example.ardino_administration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479280372430-1p82h1e9fsbjiv70557n38u0a8hop0i4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANUSmOI900Ak9GAyRPvVzZAs3d78yI7oI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479280372430-1p82h1e9fsbjiv70557n38u0a8hop0i4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

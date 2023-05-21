@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AgenceFragment"
+    android:background="@color/yellow">
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Search for Agence"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/textInput1"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="59dp"
+                                    android:layout_marginHorizontal="16dp"
+                                    android:layout_below="@+id/tv"
+                                    android:layout_alignParentStart="true"
+
+                                    android:hint="Agence Name"
+                                    android:textColorHint="@color/black"
+                                    app:boxBackgroundColor="@color/white"
+                                    app:boxCornerRadiusTopEnd="5dp"
+                                    app:boxCornerRadiusTopStart="5dp"
+                                    app:boxStrokeColor="@color/green"
+                                    app:boxStrokeWidth="2dp"
+                                    app:hintTextColor="@color/green"
+                                    app:startIconDrawable="@drawable/ic_baseline_directions_bus_24"
+                                    app:startIconTint="@color/vectror_color2">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/AgenceFragment_et_agenceName"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/textInput2"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="59dp"
+                                    android:layout_marginHorizontal="16dp"
+                                    android:layout_below="@id/textInput1"
+                                    android:layout_marginTop="16dp"
+                                    android:hint="@string/destination"
+                                    android:textColorHint="@color/black"
+                                    app:boxBackgroundColor="@color/white"
+                                    app:boxCornerRadiusTopEnd="5dp"
+                                    app:boxCornerRadiusTopStart="5dp"
+                                    app:boxStrokeColor="@color/green"
+                                    app:boxStrokeWidth="2dp"
+                                    app:hintTextColor="@color/green"
+                                    android:layout_marginBottom="20dp"
+                                    app:startIconDrawable="@drawable/ic_baseline_location_on_24"
+                                    app:startIconTint="@color/vectror_color2">
+
+                                        <com.google.android.material.textfield.TextInputEditText
+                                            android:id="@+id/AgenceFragment_et_destination"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textInput2"
+            android:background="@drawable/layout_top_shape">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="32dp"
+                android:text="All Agence"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/text"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginHorizontal="15dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/AgenceFragment_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view" />
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/AgenceFragment_btn_addAgence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Add Agence"
+                android:textAllCaps="false"
+                app:icon="@drawable/ic_baseline_add_24" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/item_home"
+        android:title="@string/item1"
+        android:icon="@drawable/ic_bus_vector" />
+
+    <item android:id="@+id/item_agence"
+        android:title="@string/item2"
+        android:icon="@drawable/ic_handshake"/>
+
+    <item android:id="@+id/item_settings"
+        android:title="@string/item3"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+
+</menu>

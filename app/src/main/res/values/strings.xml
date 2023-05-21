@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">Ardino_administration</string>
+
+    <string name="item1">Home</string>
+    <string name="item2">Agence</string>
+    <string name="item3">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="date">Date</string>
+    <string name="search">Search</string>
+    <string name="destination">Destination</string>
+
+    <string-array name="destinations">
+        <item>Sidi bel abbes</item>
+        <item>Oran</item>
+        <item>Tlemcen</item>
+        <item>Temouchent</item>
+    </string-array>
+
+    <string-array name="search_by">
+        <item>Name</item>
+        <item>Destination</item>
+    </string-array>
+
+    <string name="departs_in">departs in</string>
+    <string name="leave_time">Leave time :</string>
+    <string name="ticket_price">Ticket price</string>
+    <string name="seats_remaining">\t seats remaining</string>
+    <string name="unit">unit</string>
+    <string name="book_seat">Book Seat</string>
+    <string name="agence_name">Agence name</string>
+    <string name="wilaya_1">Wilaya 1</string>
+    <string name="wilaya_2">Wilaya 2</string>
+    <string name="price">Price</string>
+    <string name="minimal_duration">Minimal duration</string>
+    <string name="maximal_duration">Maximal duration</string>
+    <string name="cell_phone">Cell phone</string>
+    <string name="telephone">Telephone</string>
+    <string name="email">Email</string>
+    <string name="bus_number">Bus number</string>
+    <string name="duration">Duration</string>
+    <string name="contact">Contact</string>
+    <string name="rating">Rating</string>
+
+    <string-array name="the_duration">
+        <item>2hrs 25mins</item>
+        <item>3hrs 25mins</item>
+        <item>4hrs 25mins</item>
+        <item>a2hrs 25mins</item>
+        <item>3ahrs 25mins</item>
+        <item>4hars 25mins</item>
+        <item>2hras 25mins</item>
+        <item>3hrsa 25mins</item>
+        <item>4hrs a25mins</item>
+        <item>2hrs 2a5mins</item>
+        <item>3hrs 25amins</item>
+        <item>4hrs 25mains</item>
+        <item>2hrs 25mians</item>
+        <item>3hrs 25minas</item>
+        <item>4hrs 25minsa</item>
+    </string-array>
+
+    <string-array name="the_leaveTime">
+        <item>6:00PM</item>
+        <item>1:00PM</item>
+        <item>2:00PM</item>
+        <item>4:00PM</item>
+        <item>11:00PM</item>
+        <item>22:00PM</item>
+        <item>15:00PM</item>
+        <item>5:00PM</item>
+        <item>2:00PM</item>
+        <item>3:00PM</item>
+        <item>7:00PM</item>
+        <item>8:00PM</item>
+        <item>9:00PM</item>
+        <item>17:00PM</item>
+        <item>23:00PM</item>
+
+    </string-array>
+
+    <string-array name="the_date">
+        <item>24/11/2002</item>
+        <item>24/11/2022</item>
+        <item>24/11/2062</item>
+        <item>a24/11/2002</item>
+        <item>2a4/11/2022</item>
+        <item>24a/11/2062</item>
+        <item>24/a11/2002</item>
+        <item>24/1a1/2022</item>
+        <item>24/11a/2062</item>
+        <item>24/11/a2002</item>
+        <item>24/11/2a022</item>
+        <item>24/11/20a62</item>
+        <item>24/11/200a2</item>
+        <item>24/11/2022a</item>
+        <item>24/11/2062aa</item>
+    </string-array>
+
+    <string-array name="the_seats_remaining">
+        <item>8</item>
+        <item>16</item>
+        <item>28</item>
+        <item>11</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>9</item>
+        <item>15</item>
+        <item>29</item>
+        <item>11</item>
+
+
+    </string-array>
+
+    <string-array name="the_price">
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>a300</item>
+        <item>4aa00</item>
+        <item>500a</item>
+        <item>30aaa0</item>
+        <item>z400</item>
+        <item>5x00</item>
+        <item>30c0</item>
+        <item>v400</item>
+        <item>5f00</item>
+        <item>30r0</item>
+        <item>4040</item>
+        <item>500j</item>
+    </string-array>
+
+</resources>

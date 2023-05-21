@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateAgenceActivity" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/createAct_btn_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:theme="@style/btn_settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Add Agence"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/agence_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@color/black" />
+            <Button
+                android:id="@+id/button_chose_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:theme="@style/btn_settings"
+                android:background="@android:color/transparent"
+                android:stateListAnimator="@null"
+                android:text="Add profile photo"
+                android:textAllCaps="false"
+                android:textColor="#0494f4"
+                android:textSize="17sp"
+                android:gravity="center"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
+                android:hint="@string/agence_name"
+                app:hintTextColor="@color/yellow"
+                app:startIconTint="@color/vector_color"
+                app:boxStrokeColor="@color/yellow"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ft_agence_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="@string/wilaya_1"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_baseline_location_on_24"
+                app:hintTextColor="@color/yellow"
+                app:startIconTint="@color/vector_color"
+                app:boxStrokeColor="@color/yellow">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ft_first_wilaya"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="@string/wilaya_2"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_baseline_location_on_24"
+                app:hintTextColor="@color/yellow"
+                app:startIconTint="@color/vector_color"
+                app:boxStrokeColor="@color/yellow">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ft_second_wilaya"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="@string/price"
+
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_baseline_attach_money_24"
+                app:hintTextColor="@color/yellow"
+                app:startIconTint="@color/vector_color"
+                app:boxStrokeColor="@color/yellow">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ft_price"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="datetime"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout4"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="@string/minimal_duration"
+
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_baseline_access_time_filled_24"
+                app:hintTextColor="@color/yellow"
+                app:startIconTint="@color/vector_color"
+                app:boxStrokeColor="@color/yellow">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ft_minimal_duration"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout5"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="@string/maximal_duration"
+
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_baseline_access_time_filled_24"
+                app:hintTextColor="@color/yellow"
+                app:startIconTint="@color/vector_color"
+                app:boxStrokeColor="@color/yellow">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ft_maximal_duration"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout6"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="@string/cell_phone"
+
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_baseline_phone_android_24"
+                app:hintTextColor="@color/yellow"
+                app:startIconTint="@color/vector_color"
+                app:boxStrokeColor="@color/yellow">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ft_phone"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout7"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="@string/telephone"
+
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_baseline_local_phone_24"
+                app:hintTextColor="@color/yellow"
+                app:startIconTint="@color/vector_color"
+                app:boxStrokeColor="@color/yellow">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ft_telephone"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    app:startIconTint="@color/vector_color"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout8"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="@string/email"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_baseline_email_24"
+                app:hintTextColor="@color/yellow"
+                app:startIconTint="@color/vector_color"
+                app:boxStrokeColor="@color/yellow">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ft_email"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout9"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="@string/bus_number"
+                android:layout_marginBottom="20dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_baseline_directions_bus_24"
+                app:hintTextColor="@color/yellow"
+                app:startIconTint="@color/vector_color"
+                app:boxStrokeColor="@color/yellow">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ft_bus_number"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="datetime"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:text="Add Agence"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:textSize="19sp"
+                android:theme="@style/btn_style"
+                android:layout_marginBottom="20dp"/>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

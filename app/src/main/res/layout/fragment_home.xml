@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:padding="16dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/HomeFragment_layout_addAgence"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green">
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-7.6dp"
+                android:layout_marginBottom="-62dp"
+                android:src="@drawable/bus_s" />
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="140dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:text="Make it easier"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/TextView"
+                android:layout_alignStart="@id/TextView"
+                android:layout_marginTop="16dp"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+                android:gravity="center"
+                android:text="Add Agence"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/from"
+        android:textColorHint="@color/black"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeWidth="2dp"
+        app:startIconDrawable="@drawable/ic_baseline_near_me_24"
+        app:hintTextColor="@color/yellow"
+        app:startIconTint="@color/vector_color"
+        app:boxStrokeColor="@color/yellow"
+        android:layout_below="@id/HomeFragment_layout_addAgence"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/HomeFragment_from_spinir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:text="Sidi bel abbes" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageButton
+        android:id="@+id/HomeFragment_btn_switch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textInput1"
+        android:layout_alignEnd="@id/textInput1"
+        android:layout_marginTop="-13dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/btn_switch_shape"
+        android:src="@drawable/ic_switch_vector" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputTo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_below="@+id/textInput1"
+        android:layout_marginVertical="25dp"
+        android:hint="@string/to"
+        android:textColorHint="@color/black"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/yellow"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/yellow"
+        app:startIconDrawable="@drawable/ic_baseline_location_on_24"
+        app:startIconTint="@color/vector_color">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/HomeFragment_to_spinir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            android:text="Oran" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputDate"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_below="@+id/textInputTo"
+        android:hint="@string/date"
+        android:textColorHint="@color/black"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/yellow"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/yellow"
+        app:startIconDrawable="@drawable/ic_baseline_date_range_24"
+        app:startIconTint="@color/vector_color">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/HomeFragment_date_spinir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="20/12/2002"
+            android:inputType="none"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/HomeFragment_btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/textInputDate"
+        android:layout_marginTop="40dp"
+        android:text="@string/search"
+        android:textAllCaps="false"
+        android:theme="@style/btn_style"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/HomeFragment_floatBtn_addTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        android:text="Add Trip"
+        android:textAllCaps="false"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:icon="@drawable/ic_baseline_add_24" />
+
+
+
+</RelativeLayout>
